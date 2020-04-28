@@ -1,0 +1,43 @@
+{
+    "name": "vb/opdracht",
+    "description": "Posts",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "opdracht"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "a&m impact internetdiensten",
+            "homepage": "https://www.am-impact.nl"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.1.0"
+    },
+    "config": {
+        "secure-http": false
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "vb\\opdracht\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Posts",
+        "handle": "vb-opdracht",
+        "schemaVersion": "1.0.0",
+        "class": "vb\\opdracht\\Posts"
+    }
+}

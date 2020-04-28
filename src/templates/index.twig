@@ -1,0 +1,29 @@
+{% extends '_layouts/cp' %}
+{% import "_includes/forms" as forms %}
+
+{% set title = 'Posts'|t('vb-opdracht') %}
+
+{% block content %}
+
+<h2>{{ 'Add post'|t('vb-opdracht') }}</h2>
+
+{{ forms.textField({
+    label: "Post title"|t('vb-opdracht'),
+    placeholder: "Fill in the post title",
+    id: 'postTitle',
+    name: 'postTitle',
+    value: 'settings',
+    required: true
+}) }}
+
+{{ forms.textArea({
+    label: "Post content"|t('vb-opdracht'),
+    placeholder: "Fill in the post content",
+    id: 'postContent',
+    name: 'postContent',
+    required: true
+}) }}
+
+    {{ posts|print_r }}
+
+{% endblock %}
